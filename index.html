@@ -560,7 +560,7 @@
         const res = await fetch('https://api.github.com/users/arpitatinni/repos?sort=updated&per_page=12&type=owner');
         if (!res.ok) throw new Error('fetch failed');
         const repos = await res.json();
-        const filtered = repos.filter(r => !r.fork && r.name !== 'arpitatinni');
+        const filtered = repos.filter(r => !r.fork && r.name !== 'arpitatinni' && r.name !== 'arpitatinni.github.io');
 
         if (filtered.length === 0) {
           grid.innerHTML = '<p class="projects-loading">No public projects yet — check back soon!</p>';

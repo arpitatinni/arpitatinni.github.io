@@ -304,6 +304,7 @@
     .lang-dot.jupyter { background: #f97316; }
     .lang-dot.html    { background: #ef4444; }
     .lang-dot.js      { background: #eab308; }
+    .lang-dot.kotlin  { background: #8b5cf6; }
     .projects-loading { grid-column: 1/-1; text-align: center; color: var(--subtle); font-size: 0.85rem; padding: 2rem 0; }
     .projects-note { font-size: 0.8rem; color: var(--subtle); margin-top: 1rem; }
     .projects-note a { color: var(--accent); text-decoration: none; }
@@ -454,7 +455,10 @@
       <p class="section-eyebrow">About me</p>
       <h2 class="section-heading">Who I am</h2>
       <p class="about-text">
-        I'm Arpita Ghosh, a Computer Science graduate from BRAC University. I'm interested in Machine Learning and Natural Language Processing, and also enjoy exploring Web Development. My undergraduate thesis focused on NLP-based automation for systematic literature reviews on global health.
+        I'm Arpita Ghosh, a Computer Science graduate from BRAC University. My technical background is in Machine Learning and Natural Language Processing. My undergraduate thesis focused on NLP-based automation for systematic literature reviews on global health, and I also enjoy building web and mobile projects.
+      </p>
+      <p class="about-text">
+        I'm equally curious about the business and people side of technology, and I'm open to roles such as Business Development, Business Analysis, and HR. My internship in information security at City Bank and my work managing social media for ChitroGolpo gave me hands-on experience with how organizations operate and how to engage with people.
       </p>
       <p class="about-text">
         No matter how much I learn, it never feels like enough — and somehow I always find myself learning something I didn't plan to. Always learning, always building.
@@ -480,7 +484,7 @@
         <div class="tags">
           <span class="tag">Git & GitHub</span>
           <span class="tag">HTML & CSS</span>
-          <span class="tag">Microsoft 365</span>
+          <span class="tag">Microsoft Office</span>
           <span class="tag">Google Workspace</span>
         </div>
       </div>
@@ -526,7 +530,79 @@
       <p class="section-eyebrow">Projects</p>
       <h2 class="section-heading">Things I've built</h2>
       <div class="projects-grid" id="projects-grid">
-        <p class="projects-loading">Loading projects from GitHub...</p>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/Meal-Match" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">MealMatch</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A food waste donation platform connecting restaurants, NGOs, and volunteers, with role-based dashboards and donation lifecycle tracking.</p>
+          <span class="proj-lang"><span class="lang-dot python"></span>Python · Flask · SQLite · Bootstrap 5</span>
+        </a>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/NoteFriend" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">NoteFriend</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A university notes and past paper repository with PDF uploads, tag-based search, and an admin approval queue.</p>
+          <span class="proj-lang"><span class="lang-dot python"></span>Flask · SQLite · Bootstrap 5</span>
+        </a>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/RecruitAI" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">RecruitAI</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A semantic resume parser and ranker that screens candidates using SBERT and cosine similarity.</p>
+          <span class="proj-lang"><span class="lang-dot python"></span>Python · Flask · SBERT</span>
+        </a>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/BillSplit" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">BillSplit</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">An Android app for splitting bills among friends, with real-time balances, push notifications, and bKash/Nagad payment integration.</p>
+          <span class="proj-lang"><span class="lang-dot kotlin"></span>Kotlin · Jetpack Compose · Firebase</span>
+        </a>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/Job-Portal" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">Job Portal</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A MERN stack job portal with JWT auth, role-based access for students and recruiters, job listings, and applicant tracking.</p>
+          <span class="proj-lang"><span class="lang-dot js"></span>React · Node.js · MongoDB</span>
+        </a>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/Pos-Tag-Classification" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">POS Tag Classification</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A comparative study of RNN, GRU, LSTM, and BiLSTM models for Part-of-Speech tagging.</p>
+          <span class="proj-lang"><span class="lang-dot python"></span>Python · TensorFlow · Keras</span>
+        </a>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/Migraine-Type-Classification" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">Migraine Type Classification</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">Multiclass migraine type prediction from clinical data, comparing Random Forest, XGBoost, AdaBoost, and other classifiers.</p>
+          <span class="proj-lang"><span class="lang-dot python"></span>Python · scikit-learn · SMOTE</span>
+        </a>
+
+        <a class="proj-card" href="https://github.com/arpitatinni/Car-Racing" target="_blank" rel="noopener">
+          <div class="proj-card-header">
+            <span class="proj-name">Car Racing Game</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A 2D racing game with OpenGL rendering, 3 difficulty levels, collision detection, and a scoring system.</p>
+          <span class="proj-lang"><span class="lang-dot python"></span>Python · PyOpenGL</span>
+        </a>
+
       </div>
       <p class="projects-note">
         All projects are on <a href="https://github.com/arpitatinni" target="_blank" rel="noopener">GitHub →</a>
@@ -556,6 +632,12 @@
       <p class="section-eyebrow" style="text-align:center;">Contact</p>
       <h2 class="section-heading" style="text-align:center;">Find me here</h2>
       <div class="contact-row">
+
+        <a class="social-link" href="mailto:arpitatinni115@gmail.com" title="Gmail — arpitatinni115@gmail.com">
+          <svg viewBox="0 0 24 24" fill="#EA4335">
+            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+          </svg>
+        </a>
 
         <a class="social-link" href="https://github.com/arpitatinni" target="_blank" rel="noopener" title="GitHub">
           <svg viewBox="0 0 24 24" fill="#181717">
@@ -629,52 +711,6 @@
     }, { threshold: 0.5 });
 
     sections.forEach(s => activeObserver.observe(s));
-
-    const langColors = {
-      Python: 'python', Jupyter: 'jupyter',
-      'Jupyter Notebook': 'jupyter', HTML: 'html', JavaScript: 'js', default: ''
-    };
-
-    async function loadProjects() {
-      const grid = document.getElementById('projects-grid');
-      try {
-        const res = await fetch('https://api.github.com/users/arpitatinni/repos?sort=updated&per_page=12&type=owner');
-        if (!res.ok) throw new Error('fetch failed');
-        const repos = await res.json();
-        const hiddenRepos = ['anlings', 'drone', 'github.io'];
-        const filtered = repos.filter(r =>
-          !r.fork &&
-          r.name !== 'arpitatinni' &&
-          !hiddenRepos.some(h => r.name.toLowerCase().includes(h))
-        );
-
-        if (filtered.length === 0) {
-          grid.innerHTML = '<p class="projects-loading">No public projects yet — check back soon!</p>';
-          return;
-        }
-
-        grid.innerHTML = filtered.map(repo => {
-          const lang = repo.language || '';
-          const dotClass = langColors[lang] || langColors.default;
-          const desc = repo.description || 'No description provided.';
-          const name = repo.name.replace(/-/g, ' ').replace(/_/g, ' ');
-          return `
-            <a class="proj-card" href="${repo.html_url}" target="_blank" rel="noopener">
-              <div class="proj-card-header">
-                <span class="proj-name">${name}</span>
-                <span class="proj-arrow">↗</span>
-              </div>
-              <p class="proj-desc">${desc}</p>
-              ${lang ? `<span class="proj-lang"><span class="lang-dot ${dotClass}"></span>${lang}</span>` : ''}
-            </a>`;
-        }).join('');
-
-      } catch (e) {
-        grid.innerHTML = '<p class="projects-loading">Could not load projects right now. <a href="https://github.com/arpitatinni" target="_blank" rel="noopener" style="color:#2563eb;">View on GitHub →</a></p>';
-      }
-    }
-
-    loadProjects();
   </script>
 
 </body>
